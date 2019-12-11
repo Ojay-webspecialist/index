@@ -2,13 +2,13 @@ body{
     margin:0px;
     padding:0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("welcomeimage.png");
+    
     
 }
 #grid-container{
     display: grid;
    /* grid-template: repeat(3,1fr)/repeat(4,1fr);*/
-    grid-gap:2px;
+    grid-gap:0px;
     grid-template-areas:
         'n n n '
         'm m m '
@@ -26,7 +26,8 @@ body{
     background-color: white;
     align-items: center;
     padding:0 20% 0 20% ;
-    
+   
+   
     
 }
 
@@ -45,7 +46,7 @@ a:hover {
     
         box-shadow: 1px;
         border-color: azure;
-        text-decoration: underline;
+        text-decoration: none;
         filter: opacity(50%);
         
        
@@ -67,16 +68,29 @@ ul{
 nav > li >a {
     text-align: center;
     text-decoration: none;
-    color: #ff00ff;
+    color: plum;
+
     
     
     
     
 }
+
+ul> li> a.active{
+    background-color: plum;
+    border-radius: 3px;
+    color: white;
+}
+li a:hover:not(.active){
+    background-color: purple;
+    color: white;
+    border-radius: 3px;
+}
 a{
     text-decoration: none;
     text-decoration-style: none;
     padding:0 4px 0 3px;
+    color: plum;
 }
 #footerItem >ul > li > a{
     padding:0 0 0 0;
@@ -86,9 +100,15 @@ a{
 .stronglink{
     color: black;
     text-decoration: none;
+    background-color: plum;
+    opacity: 30%;
+    border-radius: 3px;
 }
 .stronglink:hover{
     text-decoration:none;
+    background-color: plum;
+    border-radius: 3px;
+    opacity: 95%;
 
 }
 
