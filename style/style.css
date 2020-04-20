@@ -16,11 +16,32 @@ body{
 }
 #navItem{
     grid-area:n;
+    display: inline-flex;
+    align-items: center;
     background-color: white; 
+    justify-content: space-around;
+    justify-content: center;
     
     text-align: right;
     
+    border: 3px dotted pink;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    
+    
+
+
+    
+    
 }
+ .mypicture{
+        width: 60px;
+        height: 60px;
+        border-radius:100%;
+        margin-top: 4px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
 #mainItem{
     grid-area:m;
     background-color: white;
@@ -30,18 +51,12 @@ body{
    
     
 }
-
-
-#footerItem{
-    grid-area:f;
-    background-color: white;
-    height: 3rem;
-    bottom:0rem;
-    padding-left: 16%;
-    align-items: center;
-    
-
+h1{
+    color:purple;
 }
+
+
+
 a:hover {
     
         box-shadow: 1px;
@@ -112,3 +127,13 @@ a{
 
 }
 
+#footerItem{
+    grid-area:f;
+    background-color: white;
+    height: 3rem;
+    bottom:0rem;
+    padding-left: 16%;
+    align-items: center;
+    
+
+}
