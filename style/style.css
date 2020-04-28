@@ -1,7 +1,12 @@
+*{
+    background-color: whitesmoke;
+}
 body{
+
     margin:0px;
     padding:0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     
     
 }
@@ -113,6 +118,15 @@ a{
 
 
 }
+#viewProject a{
+    transition: all 0.2s linear;
+
+}
+#viewProject a:hover{
+    transform: translateX(30%);
+    transition: all 0.2s linear;
+}
+
 .stronglink{
     color: black;
     text-decoration: none;
@@ -153,8 +167,7 @@ a{
 #item1{
         
     width: 40%;
-    height: 400px;
-    background-color: green;
+    height: auto;
     order:1;
    
     
@@ -162,8 +175,7 @@ a{
  #item2{
         
     width: 40%;
-    height: 400px;
-    background-color: blue;
+    height: atuo;
     order: 2;
    
     
@@ -171,8 +183,7 @@ a{
 #item3{
         
     width: 40%;
-    height: 400px;
-    background-color: yellow;
+    height: auto;
     order:3;
    
     
@@ -180,8 +191,7 @@ a{
 #item4{
         
     width: 40%;
-    height: 400px;
-    background-color: orange;
+    height: auto;
     order: 4;
    
     
@@ -189,30 +199,130 @@ a{
 #item5{
         
     width: 40%;
-    height: 400px;
-    background-color: red;
+    height: auto;
     order: 5;
    
     
 }
 #item6{
     width: 40%;
-    height: 400px;
-    background-color: violet;
+    height: auto;
     order: 6;
 }
 
 .flextItems{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-.portImage{
-    width: 80%;
-    height: 80%;
-    min-width: 70%;
-    min-height: 70%;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    margin: 30px;
+    
+
    
 }
+#item1:hover,#item2:hover,#item3:hover{
+    
+    border-radius: 4px;
+    box-shadow:0.3em 0.3em 0.3em 0.3em rgba(0,0,0,0.2);
+    transition: margin-right 2s;
+}
+.flextItems aside{
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica,sans-serif;
+    margin: 2em;
+    margin-bottom: 1em;
+    color: purple;
+
+
+}
+aside>a:hover{
+    color: purple;
+}
+#item1,#item2,#item3,#item4,#item5,#item6{
+    border:0.5px solid purple;
+    border-radius: 4px;
+    box-shadow:0.2em 0.2em 0.2em 0.2em rgba(0,0,0,0.2);
+    
+}
+
+
+.portImage{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+    
+  
+}
+@media only screen and (max-width: 832px){
+    .flexContainer{
+       
+        flex-direction: column;
+        /*justify-content: space-around;*/
+        width: 100%;
+        
+    }
+
+    #item1{
+        width: 50%;
+
+    }
+    #item2{
+        width: 50%;
+        
+    }
+
+    #item3{
+        width: 50%;
+        
+    }
+    #item4{
+        width: 50%;
+        
+    }
+    #item5{
+        width: 50%;
+        
+    }
+    #item6{
+        width: 50%;
+        
+    }
+    .portImage{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:480px){
+
+    .flexContainer{
+       
+        flex-direction: column;
+        /*justify-content: space-around;*/
+        
+        
+        
+    }
+    .flextItems{
+        width: 90%;
+    }
+  
+    #item1,#item2,#item3,#item4,#item5,#item6{
+        width: 90%;
+        min-width: 300px;
+        
+
+    }
+    .portImage{
+        width:100%;
+        min-width: 300px;
+
+       
+    }
+}
+
 
