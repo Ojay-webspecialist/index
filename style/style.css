@@ -1,5 +1,5 @@
 *{
-    background-color: whitesmoke;
+    background-color: white;
 }
 body{
 
@@ -21,14 +21,10 @@ body{
 }
 #navItem{
     grid-area:n;
-    display: inline-flex;
+    display:  flex;
     align-items: center;
     background-color: white; 
-<<<<<<< HEAD
    
-=======
-    justify-content: space-around;
->>>>>>> 5e387b72cc2d04ada4e866b16c0625c68651ecb6
     justify-content: center;
     
     text-align: right;
@@ -37,10 +33,7 @@ body{
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;
-<<<<<<< HEAD
     width:100%;
-=======
->>>>>>> 5e387b72cc2d04ada4e866b16c0625c68651ecb6
     
     
 
